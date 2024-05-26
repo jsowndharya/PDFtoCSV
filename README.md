@@ -1,4 +1,4 @@
-PDF to CSV Conversion Script
+#PDF to CSV Conversion Script
 This script uses the tabula-py library to extract tables from a specified page of a PDF file and convert them into a CSV file.
 
 Prerequisites
