@@ -12,6 +12,7 @@ Usage
 Specify Paths:
 
 pdf_path: Path to your PDF file.
+
 csv_output_path: Desired output path for the CSV file.
 
 # Script Explanation:
