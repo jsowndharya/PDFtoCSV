@@ -1,14 +1,21 @@
-This script reads a specific page from a PDF file and converts the second table on that page into a CSV file. It uses the tabula library in Python to handle the PDF parsing and conversion.
+PDF to CSV Conversion Script
+This script uses the tabula-py library to extract tables from a specified page of a PDF file and convert them into a CSV file.
 
 Prerequisites
-Make sure you have tabula-py installed. You can install it using pip:
+Ensure you have tabula-py installed. You can install it using pip:
 
 pip install tabula-py
 
 Usage
-Modify Paths: Ensure the paths to the input PDF file and the output CSV file are correctly specified in the script.
+Specify Paths:
 
-Run the Script: Execute the script to convert the second table on page 2 of the specified PDF file to a CSV file.
+pdf_path: Path to your PDF file.
+csv_output_path: Desired output path for the CSV file.
+Script Explanation:
+
+The script reads tables from page 2 of the specified PDF file.
+If multiple tables are present, it converts the second table into a CSV file.
+Code Example
 
 import tabula
 
@@ -19,11 +26,6 @@ csv_output_path = r'C:/Users/sownd/Desktop/Python/table1.csv'
 # Read the specified page from the PDF
 dfs = tabula.read_pdf(pdf_path, pages=2, multiple_tables=True)
 
-Example
-Given a PDF file located at C:/Users/sownd/Desktop/Python/ast_sci_data_tables_sample.pdf, this script will extract the second table found on page 2 and save it as a CSV file at C:/Users/sownd/Desktop/Python/table1.csv.
-
 Notes
-The script assumes the PDF contains multiple tables on the specified page.
-Modify the pages parameter if you need to read a different page.
-Ensure the paths to the PDF and CSV files are valid and accessible.
-
+Make sure the PDF file path and CSV output path are correct and accessible.
+This script assumes there are multiple tables on the specified PDF page. If not, it will notify you of the issue.
