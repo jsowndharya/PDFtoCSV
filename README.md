@@ -8,6 +8,7 @@ Ensure you have tabula-py installed. You can install it using pip:
 # pip install tabula-py
 
 Usage
+
 Specify Paths:
 
 pdf_path: Path to your PDF file.
@@ -17,6 +18,7 @@ csv_output_path: Desired output path for the CSV file.
 
 The script reads tables from page 2 of the specified PDF file.
 If multiple tables are present, it converts the second table into a CSV file.
+
 # Code Example
 
 import tabula
