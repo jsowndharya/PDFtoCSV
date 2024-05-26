@@ -7,10 +7,10 @@ Ensure you have tabula-py installed. You can install it using pip:
 
 # pip install tabula-py
 
-# Usage
-# Specify Paths:
+Usage
+Specify Paths:
 
-# pdf_path: Path to your PDF file.
+pdf_path: Path to your PDF file.
 csv_output_path: Desired output path for the CSV file.
 
 # Script Explanation:
